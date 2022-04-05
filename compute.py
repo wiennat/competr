@@ -1,13 +1,13 @@
 import sys
 import pprint
 
-pp = pprint.PrettyPrinter(indent=4)
-rl = lambda: sys.stdin.readline().strip()
+from util import pp, rl
 
 def compute():
     """ Code implementation """
     pass
 
 if __name__ == '__main__':
-    for i in range(int(rl())):  # The first line is usually # of cases
-        print "Case #%d: %s" % (i+1, compute())
+    # The first line is usually number of cases
+    for i in range(int(rl())):  
+        print("Case #%d: %s" % (i+1, compute()))
